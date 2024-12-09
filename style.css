@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper{
+    margin: auto 0;
+    border: 5px solid black;
+    height: 90dvh;
+    width: 90vw;
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    perspective: 20px;
+}
+
+.layer{
+    border: 2px solid green;
+    position: absolute;
+    bottom: 0s;
+    height: 100%;
+    width: 80%;
+    transform-style: preserve-3d;
+    background-position: center;
+    scale: cover;
+    width: 500%;
+}
+
+#layer1{
+    transform: translateZ(0px);
+    background-image: url(./img/PARALLAX/layer_01_1920\ x\ 1080.png);
+}
+#layer2{
+    transform: translateZ(-2px);
+    background-image: url(./img/PARALLAX/layer_02_1920\ x\ 1080.png);
+}
+#layer3{
+    transform: translateZ(-4px) scale(1.26);
+    background-image: url(./img/PARALLAX/layer_03_1920\ x\ 1080.png);
+}
+#layer4{
+    transform: translateZ(-6px) scale(1.4);
+    background-image: url(./img/PARALLAX/layer_04_1920\ x\ 1080.png);
+}
+#layer5{
+    transform: translateZ(-8px) scale(2);
+    background-image: url(./img/PARALLAX/layer_05_1920\ x\ 1080.png);
+}
+#layer6{
+    transform: translateZ(-10px) scale(2.5);
+    background-image: url(./img/PARALLAX/layer_06_1920\ x\ 1080.png);
+}
+#layer7{
+    transform: translateZ(-300px) scale(18);
+    background-image: url(./img/PARALLAX/layer_07_1920\ x\ 1080.png);
+}
+#layer8{
+    transform: translateZ(0px) scale(1);
+    background-image: url(./img/PARALLAX/layer_08_1920\ x\ 1080.png);
+    height: 100%;
+}
